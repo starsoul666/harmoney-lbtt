@@ -8,17 +8,11 @@ struct Index {
   build() {
     Column() {
       Web({ src: 'https://stock.quicktiny.cn/', controller: this.controller })
+        .domStorageAccess(true)
+        .onlineImageAccess(true)
+        .imageAccess(true)
+        .javaScriptAccess(true)
         .width('100%')
-        .height('100%')
-        .onPageBegin((event) => {
-          console.info('Page loading started: ' + event?.url);
-        })
-        .onPageEnd((event) => {
-          console.info('Page loading finished: ' + event?.url);
-        })
-        .onErrorReceive((event) => {
-          console.error('Page loading error: ' + event?.error?.getErrorInfo());
-        })
     }
     .width('100%')
     .height('100%')
