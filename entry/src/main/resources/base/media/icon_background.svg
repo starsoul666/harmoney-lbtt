@@ -1,0 +1,38 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景图标 - 渐变背景 -->
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764BA2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="overlayGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="192" height="192" fill="url(#bgGradient)"/>
+  
+  <!-- 装饰性网格线 -->
+  <g opacity="0.1">
+    <line x1="0" y1="48" x2="192" y2="48" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="96" x2="192" y2="96" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="144" x2="192" y2="144" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="48" y1="0" x2="48" y2="192" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="96" y1="0" x2="96" y2="192" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="144" y1="0" x2="144" y2="192" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+  
+  <!-- 光泽效果 -->
+  <rect width="192" height="192" fill="url(#overlayGradient)"/>
+  
+  <!-- 装饰性圆点 -->
+  <g opacity="0.2">
+    <circle cx="32" cy="32" r="2" fill="#FFFFFF"/>
+    <circle cx="160" cy="32" r="2" fill="#FFFFFF"/>
+    <circle cx="32" cy="160" r="2" fill="#FFFFFF"/>
+    <circle cx="160" cy="160" r="2" fill="#FFFFFF"/>
+  </g>
+</svg>

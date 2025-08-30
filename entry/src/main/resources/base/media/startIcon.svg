@@ -1,0 +1,38 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- 启动图标 - 简化版连板天梯 -->
+  <defs>
+    <radialGradient id="startBgGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C3E50;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="startGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4757;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="startGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ED573;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20BF6B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="256" height="256" rx="32" fill="url(#startBgGradient)"/>
+  
+  <!-- 主要图标内容 -->
+  <g transform="translate(64, 64)">
+    <!-- 天梯阶梯效果 -->
+    <rect x="0" y="96" width="128" height="32" rx="6" fill="url(#startGradient2)"/>
+    <text x="64" y="118" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">连板天梯</text>
+    
+    <rect x="16" y="64" width="96" height="28" rx="6" fill="url(#startGradient1)"/>
+    <rect x="32" y="36" width="64" height="24" rx="6" fill="url(#startGradient2)"/>
+    <rect x="48" y="16" width="32" height="16" rx="4" fill="url(#startGradient1)"/>
+    
+    <!-- 上涨箭头 -->
+    <path d="M64 0 L80 20 L72 20 L72 32 L56 32 L56 20 L48 20 Z" fill="#FFD700" stroke="#FFA502" stroke-width="2"/>
+  </g>
+  
+  <!-- 装饰性光效 -->
+  <circle cx="128" cy="128" r="100" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.1"/>
+  <circle cx="128" cy="128" r="80" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.2"/>
+</svg>
